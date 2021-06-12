@@ -1,13 +1,72 @@
+<!--
+    Following the general flow of the given example in FCC:
+    https://codepen.io/freeCodeCamp/full/VPaoNP
+-->
 <!DOCTYPE html>
 <HTML>
     <head>
-       <link rel="stylesheet" href="styles.css">
-  
+       <link rel="stylesheet" href="style.css">
+       <title>Survey Form</title>
     </head>
 
     <body>
-        Test!
-        <p> Yeet</p>
-        Test number two!
+        <div id="header">
+            <h1 id="title">Favourite Genshin Impact 5* Character!</h1>
+            <p id="description">Help me gauge the popularity of each Genshin Impact 5* character by filling and sharing this form.</p>
+        </div>
+        
+        <form id="survey-form">
+            <div id="user-input">
+                <label for="name-label">Name:</label><br>
+                <input type="text" id ="name" name ="name" placeholder="ex: John Doe" required>
+                <br>
+
+                <label for="email-label">Email:</label><br>
+                <input type="email" id ="email" name ="email" placeholder="ex: johndoe@email.com" required>
+                <br>
+
+                <label for="number-label">Age:</label><br>
+                <input type="number" id ="number" name ="number" min="13" max="125" placeholder="13+" required>
+                <br>
+            </div>
+
+            <div id="dropdown-buttons">
+                <label for="elements-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
+                <select name="elements" id="elements">
+                    <option value="None">No particular element</option>
+                    <option value="Cryo">Cryo</option>
+                    <option value="Hydro">Hydro</option>
+                    <option value="Pyro">Pyro</option>
+                    <option value="Electro">Electro</option>
+                    <option value="Geo">Geo</option>
+                </select>
+                <br>
+
+                <input type="radio" id=""
+            </div>
+
+            <div id="add-comments">
+
+            </div>
+
+        </form>
     </body>
+
+<!-- Tests
+    <body>
+        Test!
+        <p> Yeet before first div</p>
+        <div id="underlay">
+            <p>Text of first div.</p>
+        </div>
+        
+        <p>Text after first div and before second div</p>
+        
+        <div>
+            <p>Text inside second div</p>
+        </div>
+        
+        <p>Text after second div</p>
+    </body>
+-->
 </HTML>

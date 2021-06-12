@@ -1,3 +1,18 @@
 body {
-    background-color: cadetblue;
+    background-color: #82D2FC;
+  }
+
+  #underlay{
+    position: relative;
+    background-color: bisque;
+    opacity: 0.5;
+    width: 90%;
+    height: 90%;
+    z-index: 0;
+    top: 25%;
+    left: 25%;
+  }
+
+  #title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
