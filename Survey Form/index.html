@@ -6,6 +6,7 @@
 <HTML>
     <head>
        <link rel="stylesheet" href="style.css">
+       <link rel="icon" href="https://i.redd.it/gtu046kj9m061.png">
        <title>Survey Form</title>
     </head>
 
@@ -30,9 +31,9 @@
                 <br>
             </div>
 
-            <div id="dropdown-buttons">
-                <label for="elements-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
-                <select name="elements" id="elements">
+            <div id="dropdown">
+                <label for="dropdown-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
+                <select name="dropdown" id="dropdown">
                     <option value="None">No particular element</option>
                     <option value="Cryo">Cryo</option>
                     <option value="Hydro">Hydro</option>
@@ -41,13 +42,32 @@
                     <option value="Geo">Geo</option>
                 </select>
                 <br>
-
-                <input type="radio" id=""
             </div>
+
+            <div id="radio-checkbox">    
+                <label for="radio-buttons">First radio:</label>
+                <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 1">
+                <br>
+
+                <label for="radio-buttons">Second radio:</label>
+                <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 2">
+                <br>
+
+                <label for="checkbox-buttons">First checkbox:</label>
+                <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 1">
+                <br>
+
+                <label for="checkbox-buttons">Second checkbox:</label>
+                <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 2">
+                <br>
+             </div>
 
             <div id="add-comments">
+                <label for="comments">You are welcome to write a few lines (or an essay!) on why you love that character so much:</label><br>
+                <textarea id="comments" name="comments"></textarea>
+            </div> 
 
-            </div>
+            <input type="submit" value="Submit your answers">
 
         </form>
     </body>
