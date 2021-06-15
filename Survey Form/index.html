@@ -11,65 +11,68 @@
     </head>
 
     <body>
-        <div id="header">
-            <h1 id="title">Favourite Genshin Impact 5* Character!</h1>
-            <p id="description">Help me gauge the popularity of each Genshin Impact 5* character by filling and sharing this form.</p>
+        <div class="wrap">
+
+            <div id="header">
+                <h1 id="title">Favourite Genshin Impact 5* Character!</h1>
+                <p id="description">Help me gauge the popularity of each Genshin Impact 5* character by filling and sharing this form.</p>
+            </div>
+            
+            <form id="survey-form">
+                <div id="user-input">
+                    <label for="name-label">Name:</label><br>
+                    <input type="text" id ="name" name ="name" placeholder="ex: John Doe" required>
+                    <br>
+
+                    <label for="email-label">Email:</label><br>
+                    <input type="email" id ="email" name ="email" placeholder="ex: johndoe@email.com" required>
+                    <br>
+
+                    <label for="number-label">Age:</label><br>
+                    <input type="number" id ="number" name ="number" min="13" max="125" placeholder="13+" required>
+                    <br>
+                </div>
+
+                <div id="dropdown">
+                    <label for="dropdown-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
+                    <select name="dropdown" id="dropdown">
+                        <option value="None">No particular element</option>
+                        <option value="Cryo">Cryo</option>
+                        <option value="Hydro">Hydro</option>
+                        <option value="Pyro">Pyro</option>
+                        <option value="Electro">Electro</option>
+                        <option value="Geo">Geo</option>
+                    </select>
+                    <br>
+                </div>
+
+                <div id="radio-checkbox">    
+                    <label for="radio-buttons">First radio:</label>
+                    <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 1">
+                    <br>
+
+                    <label for="radio-buttons">Second radio:</label>
+                    <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 2">
+                    <br>
+
+                    <label for="checkbox-buttons">First checkbox:</label>
+                    <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 1">
+                    <br>
+
+                    <label for="checkbox-buttons">Second checkbox:</label>
+                    <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 2">
+                    <br>
+                </div>
+
+                <div id="add-comments">
+                    <label for="comments">You are welcome to write a few lines (or an essay!) on why you love that character so much:</label><br>
+                    <textarea id="comments" name="comments"></textarea>
+                </div> 
+
+                <input type="submit" value="Submit your answers">
+
+            </form>
         </div>
-        
-        <form id="survey-form">
-            <div id="user-input">
-                <label for="name-label">Name:</label><br>
-                <input type="text" id ="name" name ="name" placeholder="ex: John Doe" required>
-                <br>
-
-                <label for="email-label">Email:</label><br>
-                <input type="email" id ="email" name ="email" placeholder="ex: johndoe@email.com" required>
-                <br>
-
-                <label for="number-label">Age:</label><br>
-                <input type="number" id ="number" name ="number" min="13" max="125" placeholder="13+" required>
-                <br>
-            </div>
-
-            <div id="dropdown">
-                <label for="dropdown-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
-                <select name="dropdown" id="dropdown">
-                    <option value="None">No particular element</option>
-                    <option value="Cryo">Cryo</option>
-                    <option value="Hydro">Hydro</option>
-                    <option value="Pyro">Pyro</option>
-                    <option value="Electro">Electro</option>
-                    <option value="Geo">Geo</option>
-                </select>
-                <br>
-            </div>
-
-            <div id="radio-checkbox">    
-                <label for="radio-buttons">First radio:</label>
-                <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 1">
-                <br>
-
-                <label for="radio-buttons">Second radio:</label>
-                <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 2">
-                <br>
-
-                <label for="checkbox-buttons">First checkbox:</label>
-                <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 1">
-                <br>
-
-                <label for="checkbox-buttons">Second checkbox:</label>
-                <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 2">
-                <br>
-             </div>
-
-            <div id="add-comments">
-                <label for="comments">You are welcome to write a few lines (or an essay!) on why you love that character so much:</label><br>
-                <textarea id="comments" name="comments"></textarea>
-            </div> 
-
-            <input type="submit" value="Submit your answers">
-
-        </form>
     </body>
 
 <!-- Tests
