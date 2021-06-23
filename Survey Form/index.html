@@ -15,27 +15,27 @@
 
             <div id="header">
                 <h1 id="title">Favourite Genshin Impact 5* Character!</h1>
-                <p id="description">Help me gauge the popularity of each Genshin Impact 5* character by filling and sharing this form.</p>
+                <p class="description">Help me gauge the popularity of each Genshin Impact 5* character by filling and sharing this form.</p>
             </div>
             
             <form id="survey-form">
-                <div id="user-input">
+                <div id="user-info">
                     <label for="name-label">Name:</label><br>
-                    <input type="text" id ="name" name ="name" placeholder="ex: John Doe" required>
+                    <input type="text" id ="name" name ="name" class ="input-box" placeholder="ex: John Doe" required>
                     <br>
 
                     <label for="email-label">Email:</label><br>
-                    <input type="email" id ="email" name ="email" placeholder="ex: johndoe@email.com" required>
+                    <input type="email" id ="email" name ="email" class ="input-box" placeholder="ex: johndoe@email.com" required>
                     <br>
 
                     <label for="number-label">Age:</label><br>
-                    <input type="number" id ="number" name ="number" min="13" max="125" placeholder="13+" required>
-                    <br>
+                    <input type="number" id ="number" name ="number" class ="input-box" min="13" max="125" placeholder="13+" required>
                 </div>
 
                 <div id="dropdown">
-                    <label for="dropdown-label">Which of the currently available elements is your favourite? (it doesnt have to be your character's element)</label><br>
-                    <select name="dropdown" id="dropdown">
+                    <br>
+                    <label for="dropdown-label">Which of the currently available elements is your favourite <span class="whisper">(not necessarily your favourite character's element)</span>?</label><br>
+                    <select name="dropdown" id="dropdown" class ="dropdown-box" required>
                         <option value="None">No particular element</option>
                         <option value="Cryo">Cryo</option>
                         <option value="Hydro">Hydro</option>
@@ -43,53 +43,93 @@
                         <option value="Electro">Electro</option>
                         <option value="Geo">Geo</option>
                     </select>
-                    <br>
                 </div>
 
-                <div id="radio-checkbox">    
-                    <label for="radio-buttons">First radio:</label>
-                    <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 1">
+                <div id="radio-checkbox">
+                    <p>Which of these 5* is your favourite?</p>    
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Venti">
+                    <label for="radio-buttons">Venti</label>
                     <br>
 
-                    <label for="radio-buttons">Second radio:</label>
-                    <input type="radio" id="radio-buttons" name="radio-buttons" value="Radio 2">
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Klee">
+                    <label for="radio-buttons">Klee</label>
                     <br>
 
-                    <label for="checkbox-buttons">First checkbox:</label>
-                    <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 1">
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Childe">
+                    <label for="radio-buttons">Childe</label>
                     <br>
 
-                    <label for="checkbox-buttons">Second checkbox:</label>
-                    <input type="checkbox" id="checkbox-buttons" name="checkbox-buttons" value="Checkbox 2">
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Zhonlgi">
+                    <label for="radio-buttons">Zhonlgi</label>
                     <br>
+
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Albedo">
+                    <label for="radio-buttons">Albedo</label>
+                    <br>
+
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Ganyu">
+                    <label for="radio-buttons">Ganyu</label>
+                    <br>
+
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Xiao">
+                    <label for="radio-buttons">Xiao</label>
+                    <br>
+
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Eula">
+                    <label for="radio-buttons">Eula</label>
+                    <br>
+
+                    <input type="radio" id="radio-buttons" class="radio-box" name="radio-buttons" value="Kazuha">
+                    <label for="radio-buttons">Kazuha</label>
+                    <br>
+
+                    <p>Which of these 5* have you spent money on?</p>
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Venti">
+                    <label for="radio-buttons">Venti</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Klee">
+                    <label for="checkbox-buttons">Klee</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" class="check-box" name="checkbox-buttons" value="Childe">
+                    <label for="checkbox-buttons">Childe</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Zhongli">
+                    <label for="checkbox-buttons">Zhongli</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Albedo">
+                    <label for="checkbox-buttons">Albedo</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Ganyu">
+                    <label for="checkbox-buttons">Ganyu</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Xiao">
+                    <label for="checkbox-buttons">Xiao</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Eula">
+                    <label for="checkbox-buttons">Eula</label>
+                    <br>
+
+                    <input type="checkbox" id="checkbox-buttons" class="check-box" name="checkbox-buttons" value="Kazuha">
+                    <label for="checkbox-buttons">Kazuha</label>
                 </div>
 
                 <div id="add-comments">
-                    <label for="comments">You are welcome to write a few lines (or an essay!) on why you love that character so much:</label><br>
-                    <textarea id="comments" name="comments"></textarea>
+                    <br>
+                    <label for="comments">You are welcome to write a few lines <span class="whisper">(or an essay!)</span> on why you love that character so much:</label><br>
+                    <textarea id="comments" name="comments" class ="text-box"></textarea>
                 </div> 
 
-                <input type="submit" value="Submit your answers">
+                <br>
+                <input type="submit" class="submit-button" value="Submit your answers">
 
             </form>
         </div>
     </body>
-
-<!-- Tests
-    <body>
-        Test!
-        <p> Yeet before first div</p>
-        <div id="underlay">
-            <p>Text of first div.</p>
-        </div>
-        
-        <p>Text after first div and before second div</p>
-        
-        <div>
-            <p>Text inside second div</p>
-        </div>
-        
-        <p>Text after second div</p>
-    </body>
--->
 </HTML>
