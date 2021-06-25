@@ -1,0 +1,16 @@
+nav.navbar{
+    margin-top: 0px;
+}
+
+li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+/*
+NOTES:
+ - Make navbar collapsible when phone/tablet sized,
+ - Fix embedded video margin,
+*/

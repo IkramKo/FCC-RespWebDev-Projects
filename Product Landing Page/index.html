@@ -1,20 +1,50 @@
 <!--
     Following the general flow of the given example in FCC:
-    https://codepen.io/freeCodeCamp/full/VPaoNP
+    https://codepen.io/freeCodeCamp/full/RKRbwL
 -->
 
 <!DOCTYPE HTML>
 
-<HTML>
+<HTML lang="eng">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="https://images.unsplash.com/photo-1623729296034-176f277bfddc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-        <title>Survey Form</title>
+        <title>Product Landing Page</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
      </head>
 
      <body>
          <div class="wrap">
-             
+             <header id="header">
+                 <image id="header-img">
+
+                 </image>
+
+                 <nav id="nav-bar" class="navbar navbar-light navbar-fixed-top" style="background-color: #8a552a;">
+                     <div class="container-fluid">
+                         <ul class="nav navbar-nav">
+                             <li><a class="nav-link" href="#">Home</a></li>
+                             <li><a class="nav-link" href="#">Page 1</a></li>
+                             <li><a class="nav-link" href="#">Page 2</a></li>
+                             <li><a class="nav-link" href="#">Page 3</a></li>
+                         </ul>                        
+                     </div>
+                 </nav>
+             </header>
+             <div>
+                <iframe id="video" width="704" height="396" src="https://www.youtube.com/embed/wqlzeAPA0Co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+
+             <form>
+                <label for="email-label">Email:</label><br>
+                <input type="email" id ="email" name ="email" class ="input-box" placeholder="ex: johndoe@email.com" required>
+                <br>
+             </form>
          </div>
+
      </body>
 </HTML>
